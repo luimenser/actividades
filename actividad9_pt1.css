@@ -1,0 +1,62 @@
+/* Estilos del contenedor principal */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos del botón */
+.boton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Estilos de la barra de carga */
+.barra-de-carga {
+    width: 0;
+    height: 20px;
+    background-color: #27ae60;
+    animation: carga 3s infinite;
+}
+
+@keyframes carga {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+/* Estilos de la tarjeta */
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #f1c40f;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de la imagen en la tarjeta */
+.imagen-tarjeta {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; /* Ajusta la altura máxima de la imagen */
+}
