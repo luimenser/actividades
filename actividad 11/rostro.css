@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.rostro {
+    fill: #ffdab9; /* Color de piel */
+    stroke: #000; /* Borde negro */
+    stroke-width: 2;
+}
+
+.ojo {
+    fill: #fff; /* Color blanco para los ojos */
+    stroke: #000; /* Borde negro */
+    stroke-width: 2;
+    transition: fill 0.3s; /* Transición para el efecto :hover */
+}
+
+.ojo:hover {
+    fill: #0099cc; /* Nuevo color al pasar el cursor por encima */
+}
+
+.boca {
+    fill: none;
+    stroke: #000; /* Borde negro */
+    stroke-width: 2;
+}
+
+.ceja {
+    stroke: #000; /* Color negro para las cejas */
+    stroke-width: 4; /* Grosor de las cejas */
+}
